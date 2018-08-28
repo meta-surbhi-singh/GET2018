@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Login
+		</title>
+		<script src = ".\Login.js">
+		</script>
+	</head>
+	
+	<body>
+		<center>
+			<table width ="100%">
+					<tr> 
+						<td><img src = ".\hogwarts_logo.jpg" width = '10%'>
+						</td>
+						<td><a href = ".\Hogwarts.html">Hogwarts</a>
+							<a href =".\Profile.html" >Profile</a>
+							<a href = "#">Books</a>
+							<a href = ".\Owl_us.html">Owl Us</a>
+							<a href = ".\Sign_Up.html">Sign Up</a>
+							<a href = ".\Login.html">Login</a>
+						</td>
+					</tr>
+			</table>
+			<hr>
+			<table>
+			<form id = "Login_Details" action =".\Profile.html" >
+				<table cellspacing = "30">
+					<tr>
+						<td>
+                        Email  
+						</td>
+						<td>
+						<input type = "text" id = "Email" required = "required" onblur = "validateEmail()"> </br>
+						</td>
+					</tr> 
+					<tr>
+						<td>
+						Password
+						</td>
+						<td>
+						<input type = "text" id = "My_password" required ="required" onkeyup = "validatePassword()"></br>
+						</td>
+					</tr>
+					<tr colspan = "2">
+						<td> 
+						<input type = "button" id ="mysubmitbutton" value ="submit"  required = "required" onclick = "sendto()"> </br>
+						<td>
+					</tr>
+					<tr>
+						<td>
+						<a href = "">Forgot Password?</a>
+						</td>
+					<tr>
+				</table>
+			</form>
+		</center>
+	</body>
+</html>
