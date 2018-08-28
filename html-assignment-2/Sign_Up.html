@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sign Up
+		</title>
+		<script src = ".\Sign_Up.js">
+		</script>
+	</head>
+	
+	<body>
+		<center>
+			
+			<table width ="100%">
+					<tr> 
+						<td><img src = ".\hogwarts_logo.jpg" width = '10%'>
+						</td>
+						<td><a href = ".\Hogwarts.html">Hogwarts</a>
+							<a href =".\Profile.html" >Profile</a>
+							<a href = "#">Books</a>
+							<a href = ".\Owl_us.html">Owl Us</a>
+							<a href = ".\Sign_Up.html">Sign Up</a>
+							<a href = ".\Login.html">Login</a>
+						</td>
+					</tr>
+			</table>
+			<hr>
+			<h1>SIGN-UP !!</h1>
+			<table>
+			<form id = "signing_up" action = "./Login.html">
+				<table cellspacing = "30">
+					<tr>
+						<td>
+						First Name  
+						</td>
+						<td>
+						<input type = "text" id = "First_Name" placeholder = " Your first name" required = "required" onblur = "validateFirstName()" /> <br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						Last Name  
+						</td>
+						<td>
+						<input type = "text" id = "Last_Name" placeholder = " Your last name" required = "required" onblur = "validateLastName()"/><br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+                        Email  
+						</td>
+						<td>
+						<input type = "text" id = "Email" placeholder = " Your Email ID" required = "required" onblur = "validateEmail()"/></br>
+						</td>
+					</tr> 
+					<tr>
+						<td>
+						Password
+						</td>
+						<td>
+						<input type = "text" id = "my_password" placeholder = " Enter Password" required = "required" onkeyup = "validatePassword()"/></br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						Confirm Password
+						</td>
+						<td>
+						<input type = "password" id = "Confirm_password" placeholder = " Re-Enter Your Password" required = "required" onkeyup = "validateConfirmPassword()"/></br>
+						</td>
+					</tr>
+                    <tr>
+						<td>
+						Contact Number
+						</td>
+						<td>
+						<input type = "password" id = "Contact_number" placeholder = " Your Contact Number"  required = "required"  onkeyup = "validateContactNumber()"/></br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						Company/Institution						
+						</td>
+						<td>
+						<select>
+						<option>Metacube Software</option>
+						<option>Google inc.</option>
+						<option>Microsoft</option>
+						<option>Infosys</option><select> </br>
+						</td>
+					</tr>
+					<tr colspan = "2">
+						<td> <input type = "button" id ="mysubmitbutton" value ="submit" onclick = "send()" /> </br>
+						<td>
+					</tr>
+			</table>
+		</form>
+	</center>
+<body>
+<html>
