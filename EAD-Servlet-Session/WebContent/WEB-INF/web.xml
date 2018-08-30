@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>EAD-Servlet-Session</display-name>
+  <servlet>
+  <servlet-name>MyAddEmployeeServlet</servlet-name>
+  <servlet-class>com.servlets.AddEmployeeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MyAddEmployeeServlet</servlet-name>
+  <url-pattern>/AddEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>MyShowAllEmployeeServlet</servlet-name>
+  <servlet-class>com.servlets.ShowAllEmployeeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MyShowAllEmployeeServlet</servlet-name>
+  <url-pattern>/ShowAllEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>MySearchEmployeeServlet</servlet-name>
+  <servlet-class>com.servlets.SearchEmployeeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MySearchEmployeeServlet</servlet-name>
+  <url-pattern>/SearchEmployeeServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>MyUpdateServlet</servlet-name>
+  <servlet-class>com.servlets.UpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MyUpdateServlet</servlet-name>
+  <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  <servlet-name>MyUpdateDetailServlet</servlet-name>
+  <servlet-class>com.servlets.UpdateDetailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>MyUpdateDetailServlet</servlet-name>
+  <url-pattern>/UpdateDetailServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

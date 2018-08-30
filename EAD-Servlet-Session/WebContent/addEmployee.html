@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add employee detail</title>
+</head>
+<body>
+<form id = "Employee_Detail" action ="AddEmployeeServlet" >
+				<table>
+					<tr>
+						<td>
+						First Name  
+						</td>
+						<td>
+						<input type = "text" name = "First_Name" placeholder = " Your first name" required = "required" onblur = "validateFirstName()" /> <br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						Last Name  
+						</td>
+						<td>
+						<input type = "text" name = "Last_Name" placeholder = " Your last name" required = "required" /> <br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+                        Email  
+						</td>
+						<td>
+						<input type = "email" name = "Email" placeholder = " Your Email ID" required = "required"/> <br/>
+						</td>
+					</tr> 
+                    <tr>
+						<td>
+						Age
+						</td>
+						<td>
+						<input type = "number" name = "age" placeholder = " Your Age"  required = "required" /><br/>
+						</td>
+					</tr>
+	
+					<tr>
+						<td> <input type = "submit" id ="mysubmitbutton" value ="submit" /> <br/>
+						<td>
+					</tr>
+			</table>
+		</form>
+</body>
+</html>
